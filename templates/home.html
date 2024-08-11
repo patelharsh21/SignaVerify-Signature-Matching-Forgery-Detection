@@ -1,0 +1,33 @@
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Signature Verification</title>
+        <!-- Use Flask's url_for to reference static files -->
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+        <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+    </head>
+<body>
+    <div class="container">
+        <h1>Upload Images for Signature Verification</h1>
+        <form method="POST" enctype="multipart/form-data">
+            <label for="image1">Image 1:</label>
+            <input type="file" name="image1" required><br>
+            <label for="image2">Image 2:</label>
+            <input type="file" name="image2" required><br>
+            <input type="submit" value="Submit">
+        </form>
+
+        {% if note %}
+        <h2>Result: {{ note }}</h2>
+        {% else %}
+        <h2>Please upload the images to verify the signature.</h2>
+        {% endif %}
+    
+    </div>
+</body>
+</html>

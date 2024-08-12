@@ -1,56 +1,68 @@
-/* Basic reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    padding: 20px;
+    background: linear-gradient(135deg, #c3d9d5 0%, #a5c3be 50%, #8ab5a8 100%);
+    color: #1A4870;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
-
 .container {
-    max-width: 800px;
-    margin: 0 auto;
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #1F316F;
+    padding: 30px; /* Increased padding for larger container */
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Increased width for a larger container */
+    max-width: 500px; /* Increased maximum width */
+    text-align: center;
+    position: relative;
+    top: -20px; /* Moved the container slightly upwards */
 }
-
 h1 {
+    color: #ffffff;
     margin-bottom: 20px;
 }
-
 form {
-    display: flex;
-    flex-direction: column;
+    margin-bottom: 20px;
 }
-
 label {
-    margin-bottom: 5px;
-}
-
-input[type="file"] {
+    color: #ffffff;
+    font-weight: bold;
+    display: block;
     margin-bottom: 10px;
+    text-align: left;
 }
-
+input[type="file"] {
+    display: block;
+    margin-bottom: 15px;
+    padding: 5px;
+    border: 2px solid #5B99C2;
+    border-radius: 5px;
+    background-color: #c3d9d5;
+    color: #1A4870;
+    font-size: 16px;
+}
 input[type="submit"] {
-    background-color: #007bff;
-    color: #fff;
+    background-color: #5B99C2;
+    color: #c3d9d5;
     border: none;
-    padding: 10px;
+    padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
 }
-
 input[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: #1A4870;
 }
-
 h2 {
+    color: #ffffff;
     margin-top: 20px;
 }
+
+
+
+
+
+

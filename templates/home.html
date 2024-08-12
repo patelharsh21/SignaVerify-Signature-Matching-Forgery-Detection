@@ -1,19 +1,112 @@
 
 
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Signature Verification</title>
-        <!-- Use Flask's url_for to reference static files -->
+        
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
         <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
     </head>
 <body>
     <div class="container">
         <h1>Upload Images for Signature Verification</h1>
+        <form method="POST" enctype="multipart/form-data">
+            <label for="image1">Image 1:</label>
+            <input type="file" name="image1" required><br>
+            <label for="image2">Image 2:</label>
+            <input type="file" name="image2" required><br>
+            <input type="submit" value="Submit">
+        </form>
+
+        {% if note %}
+        <h2>Result: {{ note }}</h2>
+        {% else %}
+        <h2>Please upload the images to verify the signature.</h2>
+        {% endif %}
+    
+    </div>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signature Verification</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color:#c3d9d5;
+            color: #1A4870;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #1F316F;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 400px;
+            text-align: center;
+        }
+        h1 {
+            color: #c3d9d5;
+            margin-bottom: 20px;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        label {
+            color: #c3d9d5;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+        input[type="file"] {
+            display: block;
+            margin-bottom: 15px;
+            padding: 5px;
+            border: 2px solid #5B99C2;
+            border-radius: 5px;
+            background-color: #c3d9d5;
+            color: #1A4870;
+            font-size: 16px;
+        }
+        input[type="submit"] {
+            background-color: #5B99C2;
+            color: #c3d9d5;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        input[type="submit"]:hover {
+            background-color: #1A4870;
+        }
+        h2 {
+            color: #c3d9d5;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Signature Verification</h1>
         <form method="POST" enctype="multipart/form-data">
             <label for="image1">Image 1:</label>
             <input type="file" name="image1" required><br>

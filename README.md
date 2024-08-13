@@ -9,7 +9,10 @@ Here's a template for your README file:
 This web application verifies if two physical pen signatures belong to the same person using a deep learning model built with TensorFlow. The core functionality involves a Siamese neural network that processes both signature images, calculates the Euclidean distance between their latent vectors, and determines their similarity.
 ## Video Demo 
 
-[LiNK](https://drive.google.com/drive/folders/1lpf7UnG-tjJbyZE9RelnPfa4YVH1CUdD)
+[LINK](https://drive.google.com/drive/folders/1lpf7UnG-tjJbyZE9RelnPfa4YVH1CUdD)
+## High level Diagram 
+
+![image](https://github.com/user-attachments/assets/25750958-3ce4-47ba-96e2-d578a92066d9)
 
 ## Tech Stack
 
@@ -24,6 +27,9 @@ This web application verifies if two physical pen signatures belong to the same 
 3. **Siamese Network:** Both images are passed through a Siamese neural network.
 4. **Euclidean Distance Calculation:** The latent vectors from the network are compared using Euclidean distance.
 5. **Result:** The app displays whether the signatures match (same person) or not.
+## Low level diagram
+
+![image](https://github.com/user-attachments/assets/0c061f9c-0a5b-40d8-b0dc-9859ebf1ff82)
 
 ## Installation
 

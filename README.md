@@ -1,6 +1,4 @@
-Here's a template for your README file:
 
----
 
 # Signature Verification Web App
 

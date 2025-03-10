@@ -7,7 +7,7 @@
 This web application verifies if two physical pen signatures belong to the same person using a deep learning model built with TensorFlow. The core functionality involves a Siamese neural network that processes both signature images, calculates the Euclidean distance between their latent vectors, and determines their similarity.
 ## Video Demo 
 
-[LINK](https://drive.google.com/drive/folders/1lpf7UnG-tjJbyZE9RelnPfa4YVH1CUdD)
+![LINK](https://drive.google.com/file/d/1QVKao5EuRLnuWTGxxp6p0_LxTH4NxWd3/view?usp=sharing)
 ## High level Diagram 
 
 ![image](https://github.com/user-attachments/assets/25750958-3ce4-47ba-96e2-d578a92066d9)
